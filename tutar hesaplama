@@ -1,0 +1,6 @@
+#Bir aracın kilometrede ne kadar yaktığı ve kaç kilometre yol yaptığı bilgilerini alın ve sürücünü toplam ne kadar ödemesini gerektiğini hesaplayın
+
+yakit_tutar=float(input("yakit tutari giriniz:"));
+yol=int(input("gidilen kilometreyi giriniz:"));
+
+print("Toplam odenecek tutar:",(yol*yakit_tutar));
