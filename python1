@@ -1,0 +1,43 @@
+#OYUNCU BİLGİ KAYDETME PROGRAMI
+
+ad=input("adinizi giriniz:")
+soyad=input("soyadinizi giriniz:");
+takim=input("takiminizi giriniz:");
+bilgiler=[ad,soyad,takim];
+
+print("bilgiler kaydediliyor");
+print("oyuncu adi:{} \n oyuncu soyadi:{} \n oyuncu takimi:{}\n " .format(bilgiler[0],bilgiler[1],bilgiler[2]));
+print("bilgiler kaydedildi");
+
+
+#NOTLAR
+#Python'da // operatörü tam sayı bölmesi (integer division) anlamına gelir. 
+#Yani, bir sayıyı başka bir sayıya böldüğünüzde sonucu aşağıya yuvarlayarak (floor) verir.
+
+# print(10 // 3)   # Çıktı: 3
+# print(10 / 3)    # Çıktı: 3.333...
+
+#Python'da ** işareti üs alma (kuvvet) işlemi için kullanılır. Bir sayının başka bir sayıya üssünü almak istediğinizde kullanırsınız.
+
+# # print(2 ** 3)   # 2'nin 3. kuvveti = 8
+# print(5 ** 2)   # 5'in karesi = 25
+
+
+#nbviewer
+
+#Python'da sep parametresi, print() fonksiyonunda birden fazla değeri yazdırırken aralarına ne konacağını belirlemek için kullanılır.
+#varsayılan olarak, print() içindeki değerler arasına bir boşluk (" ") konur. sep ile bunu değiştirebilirsin.
+
+# print("Ali", "Veli", "Ayşe", sep="-") # Çıktı: Ali-Veli-Ayşe
+
+# print("2025", "05", "16", sep="/")  # Çıktı: 2025/05/16
+
+#Python'da f ifadesi, f-string (formatlı string) olarak bilinir ve metin içinde değişkenleri, 
+#ifadeleri doğrudan yazıp göstermek için kullanılır. Python 3.6 ve sonrasında desteklenir.
+
+# pi = 3.14159
+# print(f"Pi sayısı: {pi:.2f}") # Çıktı: Pi sayısı: 3.14
+
+# ad = "Ali"
+# yas = 25
+# print(f"Benim adım {ad}, yaşım {yas}.") # Çıktı: Benim adım Ali, yaşım 25.
