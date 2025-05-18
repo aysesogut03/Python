@@ -1,0 +1,24 @@
+#basit  hesap makinesi
+
+print("HESAP MAKINESI \n******\n 1=toplama\n 2=cikarma \n 3=carpma \n 4=bolme");
+
+a=float(input("a sayisini giriniz:"));
+b=float(input("b sayisini giriniz:"));
+
+islem=input("islem numaranizi giriniz:");
+
+if(islem=="1"):
+    print("{}+{}={}".format(a,b,a+b));
+
+elif(islem=="2"):
+    print("{}-{}={}".format(a,b,a-b));
+
+elif(islem=="3"):
+    print("{}X{}={}".format(a,b,a*b));
+
+elif(islem=="4"):
+    print("{}/{}={}".format(a,b,a/b));
+
+else:
+    print("girilen islem numarasi yanlistir.");
+   
