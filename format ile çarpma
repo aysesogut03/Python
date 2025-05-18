@@ -1,0 +1,9 @@
+#üç sayıyı format metotuyla çarpma işlemi yaptırma 
+
+x=int(input("x  al:"));
+y=int(input("y  al:"));
+z=int(input("z  al:"));
+
+carpim=x*y*z;
+
+print("{}x{}x{}={} ".format(x,y,z,carpim));
