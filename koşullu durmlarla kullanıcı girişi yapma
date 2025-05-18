@@ -1,0 +1,21 @@
+#koşullu durmlarla kullanıcı girişi yapma
+
+print("***kullanici girisi***");
+
+me_kullanici_adi="ayse";
+me_kullanici_sifre="123";
+
+kullanici_adi=input("kullanici adi giriniz:");
+kullanici_sifre=input("kullanici sifre giriniz:");
+
+if(me_kullanici_adi==kullanici_adi and me_kullanici_sifre==kullanici_sifre):
+    print("sisteme basariyla giris yapilmistir.");
+
+elif(me_kullanici_adi!=kullanici_adi and me_kullanici_sifre==kullanici_sifre):
+    print("kullanici adi hatali.");
+
+elif(me_kullanici_adi==kullanici_adi and me_kullanici_sifre!=kullanici_sifre):
+    print("kullanici sifre hatali.");
+
+elif(me_kullanici_adi!=kullanici_adi and me_kullanici_sifre!=kullanici_sifre):
+    print("hatali giris.");
