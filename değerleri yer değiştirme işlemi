@@ -1,0 +1,10 @@
+#Kullanıcıdan iki tane sayı isteyin ve bu sayıların değerlerini birbirleriyle değiştirin.
+sayi1=int(input("kullanicidan bir sayi aliniz:"));
+sayi2=int(input("kullanicidan bir sayi daha aliniz:"));
+
+print("degistirmeden once degerler: sayi1:{},sayi2:{}".format(sayi1,sayi2));
+
+sayi1, sayi2 = sayi2, sayi1
+#değiştirme işlemi kolayca bu şekilde yapılabilir.
+
+print("degistirmeden sonra  degerler: sayi1:{},sayi2:{}".format(sayi1,sayi2));
