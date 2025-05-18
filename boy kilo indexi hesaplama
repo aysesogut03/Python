@@ -1,0 +1,9 @@
+#Kullanıcıdan aldığınız boy ve kilo ile beden kitle indeksini bulun.
+#Beden Kitle İndeksi : Kilo / Boy(m) Boy(m)
+
+kilo=float(input("kilo:"));
+boy=float(input("metre cinsinden boyunuz:"));
+
+bki=kilo/(boy*boy)
+
+print("boy kilo indexiniz:",bki);
