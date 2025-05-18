@@ -1,0 +1,43 @@
+# Kullanıcının girdiği vize1,vize2,final notlarına notlarına göre harf notunu hesaplayın.
+#     Vize1 toplam notun %30'una etki edecek.
+#     Vize2 toplam notun %30'una etki edecek.
+#     Final toplam notun %40'ına etki edecek.
+#     Toplam Not >=  90 -----> AA
+#     Toplam Not >=  85 -----> BA
+#     Toplam Not >=  80 -----> BB
+#     Toplam Not >=  75 -----> CB
+#     Toplam Not >=  70 -----> CC
+#     Toplam Not >=  65 -----> DC
+#     Toplam Not >=  60 -----> DD
+#     Toplam Not >=  55 -----> FD
+#     Toplam Not <  55 -----> FF
+
+print("kullanici vize1 vize2 ve final notlarini giriniz:");
+vize1=int(input("vize1:"));
+vize2=int(input("vize2:"));
+final=int(input("final:"));
+
+tnot=vize1*0.3+vize2*0.3+final*0.4;
+print("tnot:",tnot);
+if(tnot>=90):
+    print("AA");
+elif(tnot>=85):
+    print("BA");
+elif(tnot>=80):
+    print("BB");
+elif(tnot>=75):
+    print("CB");
+elif(tnot>=70):
+    print("CC");
+elif(tnot>=65):
+    print("DC");
+elif(tnot>=55):
+    print("DD");
+elif(tnot>=90):
+    print("FD");
+else:
+    print("FF");
+
+
+
+
