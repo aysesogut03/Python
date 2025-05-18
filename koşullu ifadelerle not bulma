@@ -1,0 +1,18 @@
+# koşullu ifadeler yardımıyla not hesaplama 
+
+n=int(input("Kullanicidan notunu istedik:"));
+
+if(n>90):
+    print("AA");
+elif(n>80):
+    print("BA");
+elif(n>70):
+    print("BB");
+elif(n>60):
+    print("CB");
+elif(n>50):
+    print("CC");
+elif(n>45):
+    print("DC");
+else:
+    print("FF");
