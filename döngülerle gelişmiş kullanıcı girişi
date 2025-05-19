@@ -1,0 +1,46 @@
+#döngülerle gelişmiş kullanıcı girişi
+me_kullaniciadi="ayse";
+me_sifre=5678;
+
+giris_hakki=3;
+
+while True:
+    kullanici_adi=input("kullanici adini giriniz:");
+    sifre=input("kullanici sifresini giriniz");
+
+    if(me_kullaniciadi==kullanici_adi and me_sifre!=sifre):
+        print("kullanici sifresi yanlis");
+        print("tekrar dene ");
+        giris_hakki-=1;
+        print("kalan hak:",giris_hakki);
+       
+    elif(me_kullaniciadi!=kullanici_adi and me_sifre==sifre):
+        print("kullanici adi yanlis");
+        print("tekrar dene ");
+        giris_hakki-=1;
+        print("kalan hak:",giris_hakki);
+
+    elif(me_kullaniciadi!=kullanici_adi and me_sifre!=sifre):
+        print("kullanici sifresi ve adi yanlis");
+        print("tekrar dene ");
+        giris_hakki-=1;
+        print("kalan hak:",giris_hakki);
+        
+    else:
+        print("giris yapildi");
+        break;
+    if(giris_hakki==0):
+        print("giris hakkiniz bitti")
+        break;
+
+
+
+#range() fonksiyonu
+#print(*range(0,20)) 0 dan 20 ye kadar yazdırmayı sağlar
+#print(*range(20))  başlangıç değeri verilmezse 0 dan başlar 
+#print(*range(0,20,2)) burda da arttırma değerine göre sayılar oluşur.
+#print(*range(20,0)) bu şekilde çalışmaz  
+#print(*range(20,0,-1)) şeklinde  yazmamız gerekir.
+
+#break ⇒ Döngü biter
+#continue ⇒ Sadece o adımı atlar, döngü devam eder
