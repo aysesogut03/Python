@@ -1,0 +1,33 @@
+print("ATM uygulamasina hosgeldiniz:");
+print("1-Para cekme \n 2-para yatirma \n 3-bakiye goruntuleme \n q-tusuyla cikis yap");
+bakiye=1000;
+
+while True:
+    islem=input("islem numarasini giriniz:");
+    if(islem=="q"):
+        print("cikis yapiliyor");
+        break;
+
+    elif(islem=="1"):
+        cekilcek_tutar=int(input("cekilecek tutar:"));
+        if(cekilcek_tutar<=bakiye):
+            print("islem gerceklesiyor");
+            yeni_bakiye=bakiye-cekilcek_tutar;
+            print("kalan bakiye: {}".format(yeni_bakiye));
+        else:
+            print("yeterli para bulunmamaktadir");
+
+
+    elif(islem=="2"):
+        yatiralacak_tutar=int(input("yatiralacak tutar: "))
+        yeni_bakiye=bakiye+yatiralacak_tutar;
+        print("islem gerceklesiyor");
+        print("son  bakiye: {}".format(yeni_bakiye));
+
+        
+
+    elif(islem=="3"):
+        print("Bakiyeniz {} Tl dir.".format(yeni_bakiye));
+
+    else:
+        print("gecerli bir islem giriniz");
