@@ -1,0 +1,16 @@
+print("Faktoriyel Bulma Programi");
+print("Programdan cikmak icin q ya basiniz");
+
+while True:
+    sayi=input("sayi:");
+    if(sayi=="q"):
+        print("Programdan cikis yapiliyor...");
+        break;
+    else:
+        sayi=int(sayi)
+        faktoriyel = 1
+    for i in range(2,sayi+1):
+        faktoriyel *= i
+
+    print("Faktoriyel:",faktoriyel)
+
