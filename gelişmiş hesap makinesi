@@ -1,0 +1,80 @@
+from math import *
+
+def menu():
+    print("\n--- Gelişmiş Hesap Makinesi ---")
+    print("1. Toplama")
+    print("2. Çıkarma")
+    print("3. Çarpma")
+    print("4. Bölme")
+    print("5. Üs alma")
+    print("6. Karekök alma")
+    print("7. Sinüs")
+    print("8. Kosinüs")
+    print("9. Tanjant")
+    print("10. Logaritma (log base 10)")
+    print("11. Doğal logaritma (ln)")
+    print("12. Faktöriyel")
+    print("0. Çıkış")
+
+def hesap_makinesi():
+    while True:
+        menu()
+        secim = input("Bir işlem seçin (0-12): ")
+
+        if secim == "0":
+            print("Çıkılıyor...")
+            break
+
+        elif secim in ["1", "2", "3", "4", "5"]:
+            a = float(input("Birinci sayı: "))
+            b = float(input("İkinci sayı: "))
+
+            if secim == "1":
+                print("Sonuç:", a + b)
+            elif secim == "2":
+                print("Sonuç:", a - b)
+            elif secim == "3":
+                print("Sonuç:", a * b)
+            elif secim == "4":
+                if b != 0:
+                    print("Sonuç:", a / b)
+                else:
+                    print("Sıfıra bölme hatası!")
+            elif secim == "5":
+                print("Sonuç:", pow(a, b))
+
+        elif secim in ["6", "7", "8", "9", "10", "11", "12"]:
+            a = float(input("Sayı: "))
+
+            if secim == "6":
+                if a >= 0:
+                    print("Sonuç:", sqrt(a))
+                else:
+                    print("Negatif sayının karekökü alınamaz.")
+            elif secim == "7":
+                print("Sonuç:", sin(radians(a)))
+            elif secim == "8":
+                print("Sonuç:", cos(radians(a)))
+            elif secim == "9":
+                print("Sonuç:", tan(radians(a)))
+            elif secim == "10":
+                if a > 0:
+                    print("Sonuç:", log10(a))
+                else:
+                    print("Pozitif sayı giriniz.")
+            elif secim == "11":
+                if a > 0:
+                    print("Sonuç:", log(a))
+                else:
+                    print("Pozitif sayı giriniz.")
+            elif secim == "12":
+                if a >= 0 and a == int(a):
+                    print("Sonuç:", factorial(int(a)))
+                else:
+                    print("Negatif veya ondalıklı sayının faktöriyeli alınamaz.")
+
+        else:
+            print("Geçersiz seçim. Lütfen tekrar deneyin.")
+
+# Programı başlat
+hesap_makinesi()
