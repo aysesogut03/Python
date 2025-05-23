@@ -1,0 +1,41 @@
+import time;
+import random;
+print("Sayi tahmin oyununa hosgeldiniz");
+print("1 ile 40 arasında bir sayı tutunuz");
+
+tahminHakki=7;
+rastgeleSayi=random.randint(1,40);
+
+while True:
+    tahmin=int(input("Tahmininiz:"));
+
+    if(tahmin==rastgeleSayi):
+        print("Sayi sorgulaniyor...");
+        time.sleep(1);
+        print("Tebriklerr");
+        print("sayi",rastgeleSayi);
+        break;
+
+    elif(tahmin<rastgeleSayi):
+        print("sayi sorgulaniyor...");
+        time.sleep(1);
+        tahminHakki-=1;
+        print("Lutfen daha yuksek bir sayi soyleyin");
+        print("tahmin hakki:",tahminHakki);
+
+    else:
+        print("sayi sorgulaniyor...");
+        time.sleep(1)
+        tahminHakki-=1;
+        print("Lutfen daha dusuk bir sayi soyleyin");
+        print("tahmin hakki:",tahminHakki);
+
+    if(tahminHakki==0):
+        print("tahmin hakkiniz bitti");
+        print("sayimiz:",rastgeleSayi);
+
+
+#import math as matematik #math kütüphanesinin adını matematik diğerek çağırmamızı sağlar.
+#from math import * #ifadesi Python'da math modülündeki tüm fonksiyonları ve sabitleri doğrudan kullanmak için kullanılır.
+
+
