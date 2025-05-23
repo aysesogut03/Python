@@ -1,0 +1,42 @@
+#fonksiyonlar yardımıyla bir sayının asal olup olmadığını bulma
+print("***Asal mi degil mi***");
+print("programdan cikmak için  'q' ya basiniz");
+
+def asal_mi(sayi):
+    for i in range(2,sayi):
+        if(sayi%i==0):
+            return False;
+    return True;
+
+while True:
+    sayi=input("sayi:");
+    if(sayi=="q"):
+        print("programdan cikiliyor.");
+        break;
+    sayi=int(sayi);
+    if(sayi==1):
+        print("sayi asal degildir.");
+
+    elif(sayi==2):
+        print("sayi asaldir.");
+
+    else:
+        if(asal_mi(sayi)):
+            print(sayi,"sayi asaldir");
+        else:
+            print(sayi,"asal sayi degildir.");
+
+
+
+
+
+
+
+
+# Fonksiyonlarda 'return' ifadesi, fonksiyonun çalışması sonucu elde edilen değeri dışarıya döndürmek için kullanılır.
+# Bu sayede fonksiyonun ürettiği değeri başka bir değişkende saklayabilir veya başka işlemlerde kullanabiliri
+# Eğer 'return' kullanılmazsa, fonksiyon herhangi bir değer döndürmez (undefined döner) ve sonucu kullanamayız.
+
+#Lamda ifadesi küçük fonksiyonlarda kullanılır.Kısa bir fonksiyonu def ile yazmanın zahmetli olduğu durumlarda kullanılır.
+#topla = lambda x, y: x + y
+#print(topla(3, 5))  # Çıktı: 8
